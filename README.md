@@ -1,7 +1,7 @@
 # NLP-Bio-medical-EL-TANL
 A Sequence-to-Sequence model for Bio-medical Entity Normalization
 
-# Steps to run experiments without QLORA:
+### Steps to run experiments without QLORA:
     1. Create and activate virtual env in conda: 
         - conda create -n vatsal-env python=3.7
         - conda activate vatsal-env
@@ -10,7 +10,7 @@ A Sequence-to-Sequence model for Bio-medical Entity Normalization
         - pip install transformers
         - pip install sentencepiece // FOR T5 Models only
 
-# Steps to run experiments with QLORA:
+### Steps to run experiments with QLORA:
     1. Create virtual env:
         - conda create --name vatsal-env-qlora python=3.10 -y
         - source activate vatsal-env-qlora
@@ -21,7 +21,7 @@ A Sequence-to-Sequence model for Bio-medical Entity Normalization
         - pip install torch==2.0.0
         - pip install sentencepiece // FOR T5 Models only
 
-# Run model and inference files
+### Run model and inference files
     1. Run model.py
         - Run model.py in the background: nohup python model.py > output.log 2>&1 &
         - To see the logs: tail -f output.log
@@ -30,7 +30,7 @@ A Sequence-to-Sequence model for Bio-medical Entity Normalization
         - nohup python inference.py > output_inference.log 2>&1 &
 	
 
-# Detailed information on directory structure and files:
+### Detailed information on directory structure and files:
     1. preprocessing.py
         - To process the train, dev and test data from "dataset/raw_data" and processed data will be stored in "dataset/processed_data".
         
